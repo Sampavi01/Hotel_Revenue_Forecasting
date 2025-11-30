@@ -1,0 +1,46 @@
+# ----------------------------------------------
+# 1. SECRET AND ENVIRONMENT FILES (CRITICAL)
+# ----------------------------------------------
+# NEVER commit API keys or local settings
+.env
+# Ignore the file where you cache classified holiday data
+holidays.json 
+
+# ----------------------------------------------
+# 2. DATA AND OUTPUT FILES (Large or Generated)
+# ----------------------------------------------
+# Ignore your source data file
+Hotel_Revenue_Data.xlsx
+
+# Ignore all large output training/report files
+# This includes the 9 individual sheets compiled into one file
+Model_Training_Datasets.xlsx
+Revenue_Reports_by_Center.xlsx
+*.xlsx
+*.csv
+
+# ----------------------------------------------
+# 3. PYTHON ARTIFACTS AND VIRTUAL ENVIRONMENTS
+# ----------------------------------------------
+__pycache__/
+*.pyc
+*.pyd
+venv/               # Virtual environment directory (common name)
+env/                # Alternative virtual environment directory
+
+# ----------------------------------------------
+# 4. NOTEBOOK AND EDITOR FILES
+# ----------------------------------------------
+.ipynb_checkpoints/  # Jupyter Notebook checkpoints
+.vscode/             # VS Code settings
+.idea/               # PyCharm/IntelliJ settings
+*~                   # Backup files created by various editors
+
+# ----------------------------------------------
+# 5. MACHINE LEARNING / FORECASTING ARTIFACTS
+# ----------------------------------------------
+# Ignore saved models (trained models are often large binary files)
+*.pkl
+*.joblib
+*.h5
+*.model
